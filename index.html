@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Momtribe — Asesoría de sueño infantil con Jessica León. Tu bebé puede dormir bien, y tú también." />
+  <title>Momtribe | Asesoría de Sueño Infantil</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════ NAVBAR ═══════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#inicio" class="navbar__logo">
+        <img src="images/logo-isotipo.png" alt="momtribe" class="navbar__logo-img" />
+      </a>
+
+      <nav class="navbar__nav" id="nav-menu" aria-label="Navegación principal">
+        <ul class="navbar__links">
+          <li><a href="#inicio"       class="navbar__link">Inicio</a></li>
+          <li><a href="#sobre-mi"     class="navbar__link">Sobre mí</a></li>
+          <li><a href="#recursos"     class="navbar__link">Recursos</a></li>
+          <li><a href="#blog"         class="navbar__link">Blog</a></li>
+        </ul>
+        <!-- CTA visible solo en menú mobile -->
+        <a href="#contacto" class="btn btn--dark navbar__mobile-cta">Agendar llamada</a>
+      </nav>
+
+      <a href="#contacto" class="btn btn--dark navbar__cta">Agendar llamada</a>
+
+      <button class="navbar__hamburger" id="hamburger"
+              aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ════════════════════════════════════ HERO ════════════════════════════════════ -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <h1 class="hero__heading">
+            Si es posible que tu bebé duerma bien, y tú también&nbsp;🌙
+          </h1>
+          <p class="hero__subtitle">
+            Soy Jessica León, Sleep Coach certificada. Acompaño a familias con métodos respetuosos
+            y personalizados para que todos en casa puedan descansar de verdad.
+          </p>
+          <a href="#contacto" class="btn btn--dark">Agenda una llamada para conocer más</a>
+        </div>
+        <div class="hero__image-wrapper reveal reveal--right">
+          <img
+            src="images/jessica-headshot.jpg"
+            alt="Jessica León con su bebé"
+            class="hero__image"
+            loading="eager"
+            onerror="this.parentElement.classList.add('img-placeholder')"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ ABOUT ════════════════════════════════════ -->
+    <section class="about" id="sobre-mi">
+      <div class="container about__inner">
+        <div class="about__image-wrapper reveal">
+          <img
+            src="images/hero-mother-baby.jpg"
+            alt="Jessica León, Sleep Coach"
+            class="about__image"
+            loading="lazy"
+            onerror="this.parentElement.classList.add('img-placeholder')"
+          />
+        </div>
+        <div class="about__content reveal reveal--right">
+          <h2 class="section-heading">Sobre mí&nbsp;🤍</h2>
+          <p class="about__body">
+            Soy mamá y Sleep Coach certificada con años de experiencia ayudando a familias en toda
+            Latinoamérica. Sé lo que es vivir sin dormir, el agotamiento, la desesperación y sentir
+            que nunca vas a salir de ese ciclo.
+          </p>
+          <p class="about__body">
+            Mi misión es acompañarte con calidez, ciencia y respeto, para que encuentres el descanso
+            que tú y tu bebé merecen. Sin llorar solos, sin métodos bruscos: con estrategia y
+            acompañamiento real.
+          </p>
+          <a href="#planes" class="btn btn--outline">Conoce más de mí</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════ PLANS ═══════════════════════════════════ -->
+    <section class="plans" id="planes">
+      <div class="container">
+        <h2 class="section-heading section-heading--centered reveal">
+          Elige el plan que más se adapta a tu familia
+        </h2>
+        <div class="plans__grid">
+
+          <article class="plan-card reveal" style="--delay:0ms">
+            <div class="plan-card__emoji">🐼</div>
+            <h3 class="plan-card__name">Plan Panda</h3>
+            <p class="plan-card__price">USD 80</p>
+            <ul class="plan-card__features">
+              <li>Cuestionario de sueño inicial</li>
+              <li>Plan de sueño personalizado</li>
+              <li>1 llamada de seguimiento</li>
+              <li>Soporte por email 1 semana</li>
+            </ul>
+            <a href="#contacto" class="btn btn--outline plan-card__cta">Conoce más</a>
+          </article>
+
+          <article class="plan-card reveal" style="--delay:80ms">
+            <div class="plan-card__emoji">🐨</div>
+            <h3 class="plan-card__name">Plan Koala</h3>
+            <p class="plan-card__price">USD 120</p>
+            <ul class="plan-card__features">
+              <li>Cuestionario detallado de sueño</li>
+              <li>Plan de sueño personalizado</li>
+              <li>2 llamadas de seguimiento</li>
+              <li>Soporte por WhatsApp 2 semanas</li>
+              <li>Guía de rutinas por edad</li>
+            </ul>
+            <a href="#contacto" class="btn btn--outline plan-card__cta">Conoce más</a>
+          </article>
+
+          <article class="plan-card plan-card--featured reveal" style="--delay:160ms">
+            <div class="plan-card__badge">Más popular</div>
+            <div class="plan-card__emoji">🦘</div>
+            <h3 class="plan-card__name">Plan Canguro</h3>
+            <p class="plan-card__price">USD 380</p>
+            <ul class="plan-card__features">
+              <li>Cuestionario completo de sueño</li>
+              <li>Plan de sueño 100% personalizado</li>
+              <li>4 llamadas de seguimiento</li>
+              <li>Soporte por WhatsApp 4 semanas</li>
+              <li>Guía de rutinas y alimentación</li>
+              <li>Acceso a recursos exclusivos</li>
+              <li>Ajustes y revisiones ilimitadas</li>
+            </ul>
+            <a href="#contacto" class="btn btn--light plan-card__cta">Conoce más</a>
+          </article>
+
+          <article class="plan-card reveal" style="--delay:240ms">
+            <div class="plan-card__emoji">🐘</div>
+            <h3 class="plan-card__name">Plan Elefante</h3>
+            <p class="plan-card__price">USD 320</p>
+            <ul class="plan-card__features">
+              <li>Cuestionario completo de sueño</li>
+              <li>Plan de sueño personalizado</li>
+              <li>3 llamadas de seguimiento</li>
+              <li>Soporte por WhatsApp 3 semanas</li>
+              <li>Guía de rutinas por edad</li>
+              <li>Recursos digitales incluidos</li>
+            </ul>
+            <a href="#contacto" class="btn btn--outline plan-card__cta">Conoce más</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════ HOW IT WORKS ══════════════════════════════════ -->
+    <section class="how-it-works" id="como-funciona">
+      <div class="container">
+        <h2 class="section-heading section-heading--centered reveal">
+          Cómo funciona mi asesoría de sueño
+        </h2>
+
+        <div class="steps-wrapper">
+          <!-- Fila superior: 4 pasos -->
+          <div class="steps-row">
+            <div class="step reveal" style="--delay:0ms">
+              <span class="step__number">01</span>
+              <div class="step__icon">💬</div>
+              <h3 class="step__title">Contacto por WhatsApp</h3>
+              <p class="step__desc">Escríbeme y cuéntame brevemente tu situación actual.</p>
+            </div>
+            <div class="step reveal" style="--delay:60ms">
+              <span class="step__number">02</span>
+              <div class="step__icon">📋</div>
+              <h3 class="step__title">Cuestionario Inicial</h3>
+              <p class="step__desc">Te envío un formulario para conocer mejor a tu bebé y familia.</p>
+            </div>
+            <div class="step reveal" style="--delay:120ms">
+              <span class="step__number">03</span>
+              <div class="step__icon">📦</div>
+              <h3 class="step__title">Elige tu plan</h3>
+              <p class="step__desc">Seleccionamos juntas el plan que mejor se adapta a tu familia.</p>
+            </div>
+            <div class="step reveal" style="--delay:180ms">
+              <span class="step__number">04</span>
+              <div class="step__icon">📝</div>
+              <h3 class="step__title">Cuestionario completo</h3>
+              <p class="step__desc">Profundizamos en los hábitos y rutinas de tu bebé.</p>
+            </div>
+          </div>
+
+          <!-- Conector visual -->
+          <div class="steps-connector" aria-hidden="true">
+            <div class="steps-connector__line"></div>
+            <div class="steps-connector__arrow">↓</div>
+          </div>
+
+          <!-- Fila inferior: 3 pasos (centrados) -->
+          <div class="steps-row steps-row--bottom">
+            <div class="step reveal" style="--delay:0ms">
+              <span class="step__number">05</span>
+              <div class="step__icon">💳</div>
+              <h3 class="step__title">Pago</h3>
+              <p class="step__desc">Realizas el pago y confirmamos tu lugar.</p>
+            </div>
+            <div class="step reveal" style="--delay:60ms">
+              <span class="step__number">06</span>
+              <div class="step__icon">📞</div>
+              <h3 class="step__title">Primera llamada</h3>
+              <p class="step__desc">Diseñamos juntas el plan personalizado para tu bebé.</p>
+            </div>
+            <div class="step reveal" style="--delay:120ms">
+              <span class="step__number">07</span>
+              <div class="step__icon">🤝</div>
+              <h3 class="step__title">Acompañamiento</h3>
+              <p class="step__desc">Te apoyo durante todo el proceso hasta alcanzar el descanso.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="how-it-works__cta reveal">
+          <a href="https://wa.me/TUNUMERO" class="btn btn--dark" target="_blank" rel="noopener noreferrer">
+            Hablemos
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════ TESTIMONIALS ══════════════════════════════════ -->
+    <section class="testimonials" id="testimonios">
+      <div class="container">
+        <h2 class="section-heading section-heading--centered reveal">
+          Mamás que ya transformaron sus noches&nbsp;🌙
+        </h2>
+        <div class="testimonials__grid">
+
+          <article class="testimonial-card reveal" style="--delay:0ms">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__photo-wrapper">
+                <img src="images/testimonial-1.jpg" alt="Ana García" class="testimonial-card__photo" loading="lazy" onerror="this.parentElement.classList.add('photo-placeholder')" />
+              </div>
+              <div>
+                <p class="testimonial-card__name">Ana García</p>
+                <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+              </div>
+            </div>
+            <p class="testimonial-card__text">"Gracias a Jessica mi bebé de 8 meses ahora duerme toda la noche. El cambio fue increíble en solo 2 semanas. No puedo creer que no lo hice antes."</p>
+          </article>
+
+          <article class="testimonial-card reveal" style="--delay:80ms">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__photo-wrapper">
+                <img src="images/testimonial-2.jpg" alt="María López" class="testimonial-card__photo" loading="lazy" onerror="this.parentElement.classList.add('photo-placeholder')" />
+              </div>
+              <div>
+                <p class="testimonial-card__name">María López</p>
+                <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+              </div>
+            </div>
+            <p class="testimonial-card__text">"Pensé que era imposible. Mi niña de 10 meses se despertaba 8 veces por noche. Con el Plan Canguro transformamos nuestras noches completamente."</p>
+          </article>
+
+          <article class="testimonial-card reveal" style="--delay:160ms">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__photo-wrapper">
+                <img src="images/testimonial-3.jpg" alt="Sofía Ramírez" class="testimonial-card__photo" loading="lazy" onerror="this.parentElement.classList.add('photo-placeholder')" />
+              </div>
+              <div>
+                <p class="testimonial-card__name">Sofía Ramírez</p>
+                <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+              </div>
+            </div>
+            <p class="testimonial-card__text">"Jessica es increíble. Su acompañamiento fue clave para que yo también pudiera descansar. La recomiendo totalmente a todas las mamás agotadas."</p>
+          </article>
+
+          <article class="testimonial-card reveal" style="--delay:0ms">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__photo-wrapper">
+                <img src="images/testimonial-4.jpg" alt="Laura Méndez" class="testimonial-card__photo" loading="lazy" onerror="this.parentElement.classList.add('photo-placeholder')" />
+              </div>
+              <div>
+                <p class="testimonial-card__name">Laura Méndez</p>
+                <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+              </div>
+            </div>
+            <p class="testimonial-card__text">"Me encantó que el método es completamente respetuoso. Nada de dejar llorar solos. En 3 semanas mi bebé duerme 11 horas seguidas."</p>
+          </article>
+
+          <article class="testimonial-card reveal" style="--delay:80ms">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__photo-wrapper">
+                <img src="images/testimonial-5.jpg" alt="Carolina Torres" class="testimonial-card__photo" loading="lazy" onerror="this.parentElement.classList.add('photo-placeholder')" />
+              </div>
+              <div>
+                <p class="testimonial-card__name">Carolina Torres</p>
+                <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+              </div>
+            </div>
+            <p class="testimonial-card__text">"Valió cada centavo. El plan personalizado fue exactamente lo que necesitábamos. Jessica estuvo disponible siempre que la necesité."</p>
+          </article>
+
+          <article class="testimonial-card reveal" style="--delay:160ms">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__photo-wrapper">
+                <img src="images/testimonial-6.jpg" alt="Valentina Cruz" class="testimonial-card__photo" loading="lazy" onerror="this.parentElement.classList.add('photo-placeholder')" />
+              </div>
+              <div>
+                <p class="testimonial-card__name">Valentina Cruz</p>
+                <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+              </div>
+            </div>
+            <p class="testimonial-card__text">"Dudé mucho en invertir en esto, pero fue la mejor decisión que tomé. Mi bebé y yo dormimos bien por primera vez en meses. ¡Gracias, Jessica!"</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ FINAL CTA ════════════════════════════════════ -->
+    <section class="final-cta" id="contacto">
+      <div class="container final-cta__inner">
+        <div class="final-cta__image-wrapper reveal">
+          <img
+            src="images/MJMD-59.jpg"
+            alt="Bebé feliz y descansado"
+            class="final-cta__image"
+            loading="lazy"
+            onerror="this.parentElement.classList.add('img-placeholder')"
+          />
+        </div>
+        <div class="final-cta__content reveal reveal--right">
+          <h2 class="section-heading">El descanso de tu bebé puede empezar hoy</h2>
+          <p class="final-cta__subtitle">
+            Da el primer paso hacia noches tranquilas para toda tu familia. Juntas lo logramos.
+          </p>
+          <a href="https://wa.me/TUNUMERO" class="btn btn--dark" target="_blank" rel="noopener noreferrer">
+            Agenda tu llamada ahora
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════ FOOTER ══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__top">
+        <a href="#inicio" class="footer__logo">
+          <img src="images/logo-isotipo.png" alt="momtribe" class="footer__logo-img" />
+        </a>
+
+        <nav aria-label="Navegación del pie de página">
+          <ul class="footer__links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#recursos">Recursos</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__socials">
+          <a href="https://instagram.com/momtribecr" aria-label="Instagram" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/TUNUMERO" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+            </svg>
+          </a>
+          <a href="https://facebook.com/momtribecr" aria-label="Facebook" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; <span id="year"></span> momtribe. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
