@@ -44,28 +44,55 @@
 
     <!-- ════════════════════════════════════ HERO ════════════════════════════════════ -->
     <section class="hero" id="inicio">
-      <div class="container hero__inner">
-        <div class="hero__content reveal">
+      <div class="hero__photo-bg" aria-hidden="true">
+        <img src="images/jessica-headshot.jpg" alt="" class="hero__bg-img" loading="eager"
+             onerror="this.parentElement.classList.add('img-placeholder')" />
+      </div>
+      <div class="container hero__container">
+        <div class="hero__card reveal">
+          <p class="section-eyebrow">Sleep Coach Certificada</p>
           <h1 class="hero__heading">
-            Si es posible que tu bebé duerma bien, y tú también&nbsp;🌙
+            Sí es posible que tu bebé<br>duerma bien, y tú también
           </h1>
           <p class="hero__subtitle">
-            Soy Jessica León, Sleep Coach certificada. Acompaño a familias con métodos respetuosos
+            Soy Jessica León. Acompaño a familias con métodos respetuosos
             y personalizados para que todos en casa puedan descansar de verdad.
           </p>
           <a href="#contacto" class="btn btn--dark">Agenda una llamada para conocer más</a>
         </div>
-        <div class="hero__image-wrapper reveal reveal--right">
-          <img
-            src="images/jessica-headshot.jpg"
-            alt="Jessica León con su bebé"
-            class="hero__image"
-            loading="eager"
-            onerror="this.parentElement.classList.add('img-placeholder')"
-          />
-        </div>
       </div>
     </section>
+
+    <!-- ══════════════════════════════ MARQUEE STRIP ════════════════════════════════ -->
+    <div class="marquee-strip" aria-hidden="true" role="presentation">
+      <div class="marquee-track">
+        <span class="marquee-item">¿Cuántas veces se despertó tu bebé anoche?</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">No tienes que dejarlo llorar solo</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">El sueño infantil se puede aprender</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Métodos respetuosos que sí funcionan</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Tú también mereces descansar</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Acompaño a tu familia con calidez y ciencia</span>
+        <span class="marquee-sep">✦</span>
+        <!-- Duplicado para loop seamless -->
+        <span class="marquee-item">¿Cuántas veces se despertó tu bebé anoche?</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">No tienes que dejarlo llorar solo</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">El sueño infantil se puede aprender</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Métodos respetuosos que sí funcionan</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Tú también mereces descansar</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Acompaño a tu familia con calidez y ciencia</span>
+        <span class="marquee-sep">✦</span>
+      </div>
+    </div>
 
     <!-- ═══════════════════════════════════ ABOUT ════════════════════════════════════ -->
     <section class="about" id="sobre-mi">
@@ -80,7 +107,8 @@
           />
         </div>
         <div class="about__content reveal reveal--right">
-          <h2 class="section-heading">Sobre mí&nbsp;🤍</h2>
+          <p class="section-eyebrow">Sleep Coach</p>
+          <h2 class="section-heading">Sobre mí</h2>
           <p class="about__body">
             Soy mamá y Sleep Coach certificada con años de experiencia ayudando a familias en toda
             Latinoamérica. Sé lo que es vivir sin dormir, el agotamiento, la desesperación y sentir
@@ -99,67 +127,100 @@
     <!-- ════════════════════════════════════ PLANS ═══════════════════════════════════ -->
     <section class="plans" id="planes">
       <div class="container">
+        <p class="section-eyebrow section-eyebrow--centered reveal">Servicios</p>
         <h2 class="section-heading section-heading--centered reveal">
           Elige el plan que más se adapta a tu familia
         </h2>
         <div class="plans__grid">
 
           <article class="plan-card reveal" style="--delay:0ms">
-            <div class="plan-card__emoji">🐼</div>
-            <h3 class="plan-card__name">Plan Panda</h3>
-            <p class="plan-card__price">USD 80</p>
-            <ul class="plan-card__features">
-              <li>Cuestionario de sueño inicial</li>
-              <li>Plan de sueño personalizado</li>
-              <li>1 llamada de seguimiento</li>
-              <li>Soporte por email 1 semana</li>
-            </ul>
+            <div class="plan-card__image-wrapper">
+              <img src="images/plan-panda.jpg" alt="Plan Panda" class="plan-card__image" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+              <div class="plan-card__overlay">
+                <div class="plan-card__emoji">🐼</div>
+                <h3 class="plan-card__name">Plan Panda</h3>
+                <p class="plan-card__price">USD 80</p>
+              </div>
+            </div>
+            <div class="plan-card__body">
+              <ul class="plan-card__features">
+                <li>1 llamada de 60 minutos para aclarar todas tus dudas generales sobre sueño infantil</li>
+              </ul>
+              <div class="plan-card__benefits">
+                <p class="plan-card__benefit">🌙 Resuelve tus preguntas más urgentes sin comprometerte a un plan completo</p>
+                <p class="plan-card__benefit">🌙 Te llevas consejos prácticos y estrategias inmediatas para aplicar en casa</p>
+              </div>
+            </div>
             <a href="#contacto" class="btn btn--outline plan-card__cta">Conoce más</a>
           </article>
 
           <article class="plan-card reveal" style="--delay:80ms">
-            <div class="plan-card__emoji">🐨</div>
-            <h3 class="plan-card__name">Plan Koala</h3>
-            <p class="plan-card__price">USD 120</p>
-            <ul class="plan-card__features">
-              <li>Cuestionario detallado de sueño</li>
-              <li>Plan de sueño personalizado</li>
-              <li>2 llamadas de seguimiento</li>
-              <li>Soporte por WhatsApp 2 semanas</li>
-              <li>Guía de rutinas por edad</li>
-            </ul>
+            <div class="plan-card__image-wrapper">
+              <img src="images/plan-koala.jpg" alt="Plan Koala" class="plan-card__image" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+              <div class="plan-card__overlay">
+                <div class="plan-card__emoji">🐨</div>
+                <h3 class="plan-card__name">Plan Koala</h3>
+                <p class="plan-card__price">USD 120</p>
+              </div>
+            </div>
+            <div class="plan-card__body">
+              <ul class="plan-card__features">
+                <li>1 llamada de 60 minutos para conocer tu caso</li>
+                <li>Un plan de sueño escrito y personalizado</li>
+              </ul>
+              <div class="plan-card__benefits">
+                <p class="plan-card__benefit">🌙 Claridad inmediata para empezar con pasos seguros a mejorar el sueño de tu bebé</p>
+                <p class="plan-card__benefit">🌙 Rutinas prácticas que devuelven la calma a tus noches</p>
+              </div>
+            </div>
             <a href="#contacto" class="btn btn--outline plan-card__cta">Conoce más</a>
           </article>
 
           <article class="plan-card plan-card--featured reveal" style="--delay:160ms">
             <div class="plan-card__badge">Más popular</div>
-            <div class="plan-card__emoji">🦘</div>
-            <h3 class="plan-card__name">Plan Canguro</h3>
-            <p class="plan-card__price">USD 380</p>
-            <ul class="plan-card__features">
-              <li>Cuestionario completo de sueño</li>
-              <li>Plan de sueño 100% personalizado</li>
-              <li>4 llamadas de seguimiento</li>
-              <li>Soporte por WhatsApp 4 semanas</li>
-              <li>Guía de rutinas y alimentación</li>
-              <li>Acceso a recursos exclusivos</li>
-              <li>Ajustes y revisiones ilimitadas</li>
-            </ul>
+            <div class="plan-card__image-wrapper">
+              <img src="images/plan-canguro.jpg" alt="Plan Canguro" class="plan-card__image" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+              <div class="plan-card__overlay">
+                <div class="plan-card__emoji">🦘</div>
+                <h3 class="plan-card__name">Plan Canguro</h3>
+                <p class="plan-card__price">USD 280</p>
+              </div>
+            </div>
+            <div class="plan-card__body">
+              <ul class="plan-card__features">
+                <li>1 llamada de 60 minutos para diseñar el plan</li>
+                <li>Un plan de sueño escrito y personalizado</li>
+                <li>Seguimiento diario por WhatsApp durante 2–3 semanas</li>
+              </ul>
+              <div class="plan-card__benefits">
+                <p class="plan-card__benefit">🌙 Ajustes en tiempo real según la evolución de tu bebé</p>
+                <p class="plan-card__benefit">🌙 Acompañamiento cercano que da confianza y resultados más rápidos</p>
+              </div>
+            </div>
             <a href="#contacto" class="btn btn--light plan-card__cta">Conoce más</a>
           </article>
 
           <article class="plan-card reveal" style="--delay:240ms">
-            <div class="plan-card__emoji">🐘</div>
-            <h3 class="plan-card__name">Plan Elefante</h3>
-            <p class="plan-card__price">USD 320</p>
-            <ul class="plan-card__features">
-              <li>Cuestionario completo de sueño</li>
-              <li>Plan de sueño personalizado</li>
-              <li>3 llamadas de seguimiento</li>
-              <li>Soporte por WhatsApp 3 semanas</li>
-              <li>Guía de rutinas por edad</li>
-              <li>Recursos digitales incluidos</li>
-            </ul>
+            <div class="plan-card__image-wrapper">
+              <img src="images/plan-elefante.jpg" alt="Plan Elefante" class="plan-card__image" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+              <div class="plan-card__overlay">
+                <div class="plan-card__emoji">🐘</div>
+                <h3 class="plan-card__name">Plan Elefante</h3>
+                <p class="plan-card__price">USD 320</p>
+              </div>
+            </div>
+            <div class="plan-card__body">
+              <ul class="plan-card__features">
+                <li>1 llamada de 60 minutos para crear el plan inicial</li>
+                <li>Un plan de sueño escrito y personalizado</li>
+                <li>Seguimiento diario por WhatsApp durante 2–3 semanas</li>
+                <li>Apoyo adicional en transiciones clave: siestas, viajes, cambios de horario, destete nocturno</li>
+              </ul>
+              <div class="plan-card__benefits">
+                <p class="plan-card__benefit">🌙 Tranquilidad total en los cambios importantes</p>
+                <p class="plan-card__benefit">🌙 Acompañamiento completo para lograr un descanso duradero</p>
+              </div>
+            </div>
             <a href="#contacto" class="btn btn--outline plan-card__cta">Conoce más</a>
           </article>
 
@@ -170,6 +231,7 @@
     <!-- ══════════════════════════════ HOW IT WORKS ══════════════════════════════════ -->
     <section class="how-it-works" id="como-funciona">
       <div class="container">
+        <p class="section-eyebrow section-eyebrow--centered reveal">El proceso</p>
         <h2 class="section-heading section-heading--centered reveal">
           Cómo funciona mi asesoría de sueño
         </h2>
@@ -178,25 +240,25 @@
           <!-- Fila superior: 4 pasos -->
           <div class="steps-row">
             <div class="step reveal" style="--delay:0ms">
-              <span class="step__number">01</span>
+              <div class="step__number">01</div>
               <div class="step__icon">💬</div>
               <h3 class="step__title">Contacto por WhatsApp</h3>
               <p class="step__desc">Escríbeme y cuéntame brevemente tu situación actual.</p>
             </div>
             <div class="step reveal" style="--delay:60ms">
-              <span class="step__number">02</span>
+              <div class="step__number">02</div>
               <div class="step__icon">📋</div>
               <h3 class="step__title">Cuestionario Inicial</h3>
               <p class="step__desc">Te envío un formulario para conocer mejor a tu bebé y familia.</p>
             </div>
             <div class="step reveal" style="--delay:120ms">
-              <span class="step__number">03</span>
+              <div class="step__number">03</div>
               <div class="step__icon">📦</div>
               <h3 class="step__title">Elige tu plan</h3>
               <p class="step__desc">Seleccionamos juntas el plan que mejor se adapta a tu familia.</p>
             </div>
             <div class="step reveal" style="--delay:180ms">
-              <span class="step__number">04</span>
+              <div class="step__number">04</div>
               <div class="step__icon">📝</div>
               <h3 class="step__title">Cuestionario completo</h3>
               <p class="step__desc">Profundizamos en los hábitos y rutinas de tu bebé.</p>
@@ -212,22 +274,22 @@
           <!-- Fila inferior: 3 pasos (centrados) -->
           <div class="steps-row steps-row--bottom">
             <div class="step reveal" style="--delay:0ms">
-              <span class="step__number">05</span>
+              <div class="step__number">05</div>
               <div class="step__icon">💳</div>
               <h3 class="step__title">Pago</h3>
               <p class="step__desc">Realizas el pago y confirmamos tu lugar.</p>
             </div>
             <div class="step reveal" style="--delay:60ms">
-              <span class="step__number">06</span>
+              <div class="step__number">06</div>
               <div class="step__icon">📞</div>
               <h3 class="step__title">Primera llamada</h3>
               <p class="step__desc">Diseñamos juntas el plan personalizado para tu bebé.</p>
             </div>
             <div class="step reveal" style="--delay:120ms">
-              <span class="step__number">07</span>
+              <div class="step__number">07</div>
               <div class="step__icon">🤝</div>
               <h3 class="step__title">Acompañamiento</h3>
-              <p class="step__desc">Te apoyo durante todo el proceso hasta alcanzar el descanso.</p>
+              <p class="step__desc">Empiezas la implementación con mi apoyo diario (según el plan elegido) hasta lograr noches tranquilas</p>
             </div>
           </div>
         </div>
@@ -240,11 +302,24 @@
       </div>
     </section>
 
+    <!-- ══════════════════════════════ QUOTE BANNER ══════════════════════════════════ -->
+    <section class="quote-banner" aria-label="Cita de Jessica León">
+      <div class="container">
+        <div class="quote-banner__inner reveal">
+          <blockquote class="quote-banner__quote">
+            "No tienes que sobrevivir la maternidad agotada. Tu bebé puede aprender a dormir, y tú mereces descansar de verdad."
+          </blockquote>
+          <cite class="quote-banner__cite">— Jessica León, Sleep Coach</cite>
+        </div>
+      </div>
+    </section>
+
     <!-- ══════════════════════════════ TESTIMONIALS ══════════════════════════════════ -->
     <section class="testimonials" id="testimonios">
       <div class="container">
+        <p class="section-eyebrow section-eyebrow--centered reveal">Resultados reales</p>
         <h2 class="section-heading section-heading--centered reveal">
-          Mamás que ya transformaron sus noches&nbsp;🌙
+          Mamás que ya transformaron sus noches
         </h2>
         <div class="testimonials__grid">
 
@@ -343,6 +418,7 @@
           />
         </div>
         <div class="final-cta__content reveal reveal--right">
+          <p class="section-eyebrow">Da el primer paso</p>
           <h2 class="section-heading">El descanso de tu bebé puede empezar hoy</h2>
           <p class="final-cta__subtitle">
             Da el primer paso hacia noches tranquilas para toda tu familia. Juntas lo logramos.
