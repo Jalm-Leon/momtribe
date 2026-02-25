@@ -6,25 +6,25 @@
 /* ─── 1. DESIGN TOKENS ──────────────────────────────────────────── */
 :root {
   /* Colors */
-  --cream:          #FAF5EF;
-  --cream-mid:      #F2E8DC;
-  --cream-deep:     #EAD9C8;
-  --terracotta:     #C17A56;
+  --cream:          #FAF8F4;
+  --cream-mid:      #F5EFE6;
+  --cream-deep:     #EDE5D8;
+  --terracotta:     #E8B4B8;
   --brown-dark:     #2C1810;
-  --brown-mid:      #5A3425;
-  --featured-bg:    #3D2010;
+  --brown-mid:      #7A6560;
+  --featured-bg:    #3A2A26;
   --text:           #2D2218;
-  --text-muted:     #7A6255;
+  --text-muted:     #6B5B53;
   --white:          #FFFFFF;
-  --border:         #E4D0BC;
-  --border-light:   #EFE3D4;
-  --sage:       #6B7F6B;
-  --sage-light: #EDF1ED;
-  --sage-mid:   #D4DDD4;
+  --border:         #DDD3C8;
+  --border-light:   #EDE7DF;
+  --sage:       #B7C4B2;
+  --sage-light: #E8EEE6;
+  --sage-mid:   #CDD5CB;
 
   /* Typography */
-  --font-heading: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-  --font-body:    'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Gowun Batang', Georgia, 'Times New Roman', serif;
+  --font-body:    'Josefin Sans', system-ui, -apple-system, sans-serif;
 
   /* Fluid font scale */
   --text-xs:   clamp(0.72rem,  1.4vw, 0.813rem);
